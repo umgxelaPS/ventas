@@ -10,8 +10,6 @@ services:
       - mariadb
   mariadb:
     image: 'docker.io/bitnami/mariadb:10.3-debian-10'
-    volumes: 
-      - dbdata:/var/lib/mysql
     environment:
       - ALLOW_EMPTY_PASSWORD=yes
       - MYSQL_DATBASE=ventas
