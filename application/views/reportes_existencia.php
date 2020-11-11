@@ -21,7 +21,7 @@
           <div class="contenidoreportes">
             <section class="content-header encabezadoreportes">
                <h3 class="text-dark font-weight-bold display-4 titulo">
-                Reporte
+                Reporte de Existencias
                 
                 <small class="font-weight-bold">Listado</small>
                 </h3>
@@ -31,50 +31,32 @@
                     <div class="box-body">
                     <div class="formularios">
                         <form action="<?php echo current_url();?>" method="POST" class="formhorizontal">
-                        <div class="row">
-                        <div class="col">
-                          <label for="fechainicio" class="col control-label">Desde:</label>
-                            <input type="date" class="form-control" name="fechainicio" value="<?php echo !empty($fechainicio) ? $fechainicio:'';?>">
-                         </div>
-                            <div class="col">
-                         <label for="fechafin" class="col control-label">Hasta:</label>
-                            <input type="date" class="form-control" name="fechafin" value="<?php echo !empty($fechafin) ? $fechafin:'';?>">
-                         </div>
-                         
-                            <div class="col">
-                            <input type="submit" name="buscar" value="Buscar" class=" btn btn-primary">
-                            <a href="<?php echo base_url();?>reportes/ventas" class="btn btn-danger">Restablecer</a>
-                            </div>
-                            </div>
                         </form>
                         </div>
                         <div class="tabla5">
                         <div class="row">
                         <div class="col">
-                        <table id="example"class="table table-bordered table-condensed btn-hover">
+                        <table id="existencia"class="table table-bordered table-condensed btn-hover">
                             <thead>
                             <tr>
                             <th>#</th>
-                            <th>Nombre del cliente</th>
-                            <th>Tipo de comprobante</th>
-                            <th>Numero de comprobante</th>
-                            <th>Fecha</th>
-                            <th>Total</th>
+                            <th>Codigo</th>
+                            <th>Producto</th>
+                            <th>Existencias</th>
                             <th>Opciones</th>
                             </tr>
                             </thead>
                             <tbody>
-                            <?php if(!empty($ventas)):?>
-                                <?php foreach($ventas as $venta):?>
+                            <?php if(!empty($productos)):?>
+                                <?php foreach($productos as $producto):?>
                                 <tr>
-                                 <td><?php echo $venta->id;?></td>
-                                 <td><?php echo $venta->nombres;?></td>
-                                 <td><?php echo $venta->tipocomprobante;?></td>
-                                 <td><?php echo $venta->numero_documento;?></td>
-                                 <td><?php echo $venta->fecha;?></td>
-                                 <td><?php echo $venta->total;?></td>
+                                 <td><?php echo $producto->id;?></td>
+                                 <td><?php echo $producto->codigo;?></td>
+                                 <td><?php echo $producto->nombre;?></td>
+                                 <td><?php echo $producto->stock;?></td>
+                                <?php $dataproducto =$producto->id."*".$producto->codigo."*".$producto->nombre."*".$producto->stock;?>
                                  <td>
-                                     <button type="button" class="btn btn-info btn-view-venta" value="<?php echo $venta->id;?>" data-toggle="modal" data-target="#modal-default"> <span ><i class="icon ion-md-search"></i></span></button>
+                                     <button type="button" class="btn btn-info btn-view-existencia" value="<?php echo $dataproducto;?>" data-toggle="modal" data-target="#modal-default"> <span ><i class="icon ion-md-search"></i></span></button>
                                     </td>
                                 
                                 </tr>
@@ -94,16 +76,17 @@
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
+        <h5 class="modal-title">Existencias</h5>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title">registro de venta</h4>
+        
       </div>
       <div class="modal-body">
         
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-danger pull-left" data-dismiss="modal">Cerrar</button>
-        <button type="button" class="btn btn-primary btn-imprimir"><span class="fa fa-print">Imprimir</span></button>
+        
       </div>
     </div>
 

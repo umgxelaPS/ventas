@@ -10,12 +10,11 @@
   
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script> 
-    <title>Aregar cliente</title>
+    <title>Agregar cliente</title>
     
     </head>
     <body>
-
-        <div class="content-wrapper contenido formularios">
+        <div class="contenido">
             <section class="content-header  encabezado">
                 <div class="row">
                  <div class="col-md-12">
@@ -26,13 +25,12 @@
                 </h3>
                     </div>
                 </div>
+               <hr>
             </section>
-            
-            <section class="content agregar">
                
                 <div class="box box-solid">
                     <div class="box-body">
-                <hr>
+             
                         
                         <?php if($this->session->flashdata("error")):?>
                         <div class="alert alert-danger alert-dismissible">
@@ -40,7 +38,7 @@
                         <p><i class="icon fa fa-ban"></i><?php echo $this->session->flashdata("error")?></p>        
                         </div>
                         <?php endif;?>
-                        
+                        <div class="formularios">
                         <form action="<?php echo base_url();?>clientes/store" method="POST">
                         <div class="form-group <?php echo form_error("nombres") != false ? 'has-error':'';?>">
                         <div class="row">
@@ -51,7 +49,7 @@
                             <?php echo form_error("nombres","<span class='help-block'>","</span>");?>
                             </div> 
                              </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                         <div class="form-group">
                         <label for="apellidos">Apellidos</label>
                          <input type="text" class="form-control" id="apellidos" name="apellidos">
@@ -59,14 +57,14 @@
                             </div>
                             </div>
                             <div class="row">
-                            <div class="col-md-4">
+                            <div class="col-md-5">
                             <div class="form-group">
                         <label for="telefono">Telefono:</label>
                          <input type="text" class="form-control" id="telefono" name="telefono">
                             </div>
                             </div>
                                 
-                            <div class="col-md-6">
+                            <div class="col-md-7">
                             <div class="form-group">
                         <label for="direccion">Direccion:</label>
                          <input type="text" class="form-control" id="direccion" name="direccion">
@@ -90,11 +88,11 @@
                             </div>
                             </div>
                             </div>
-                        </form>   
+                        </form> 
                         </div>
                         </div>
-                    </section>
-                    </div>                
+                        </div>
+                    </div> 
     </body>
 </html>
         

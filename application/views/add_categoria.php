@@ -15,7 +15,7 @@
     
     </head>
     <body>
-        <div class="content-wrapper  contenido formularios ">
+        <div class="contenido ">
             <section class="content-header  encabezado ">
                 <div class="row">
                  <div class="col-md-12">
@@ -26,12 +26,12 @@
                 </h3>
                     </div>
                 </div>
+             <hr>
             </section>
-            <section class="content agregar " >
-    
-                <div class="box box-solid">
+            
+            <div class="box box-solid">
                     <div class="box-body">
-               <hr>
+              
            
                     <?php if($this->session->flashdata("error")):?>
                         <div class="alert alert-danger alert-dismissible">
@@ -40,6 +40,7 @@
                             
                         </div>
                         <?php endif;?>
+            <div class="formularios">
             <form action="<?php echo base_url();?>categorias/store" method="POST">
             <div class="form-group <?php echo !empty(form_error("nombre"))? 'has-error': ''?>">
             <div class="row">
@@ -52,7 +53,7 @@
                 </div>
              </div>  
             <div class="row">
-            <div class="col-md-8">
+            <div class="col-md-10">
              <div class="form-group">
              <label for="nombre">Descripcion</label>
             <input type="text" class="form-control" id="descripcion" name="descripcion">
@@ -70,10 +71,9 @@
                 </div>
                  </div>
              </form>
-                
+             </div>   
         </div>
         </div>
-        </section>
         </div>
     </body>
 </html>

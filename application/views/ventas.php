@@ -17,15 +17,13 @@
     </head>
     <body> 
        
-            <div class="contenido">
-            <section class="content-header encabezado">
+            <div class="contenidoventas">
+            <section class="content-header encabezadoventas">
                <h3 class="text-dark font-weight-bold display-4 titulo">
                 Ventas
                 
                 <small class="font-weight-bold">Listado</small>
                 </h3>
-            </section>
-            <section class="content agregar">
                 <div class="box box-solid">
                     <div class="box-body">
                     <div class="row">
@@ -37,7 +35,7 @@
                 </div>
                 <hr>
                 </section>
-                        <div class="tabla">
+                        <div class="tabla4">
                         <div class="row">
                         <div class="col-md-12">
                         <table id="example1"class="table table-bordered btn-hover">
@@ -102,6 +100,3 @@
 </div>
     </body>
 </html>
-
-       
-

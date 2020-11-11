@@ -16,7 +16,7 @@
 	</div>	
 	<div class="col-xs-6">	
 		<b>COMPROBANTE</b> <br>
-		<b>Tipo de Comprobante:</b><?php echo $venta->tipocomprobante;?> <br>
+		<b>  Tipo de Comprobante:</b><?php echo $venta->tipocomprobante;?> <br>
 		<b>Serie:</b><?php echo $venta->serie;?> <br>
 		<b>No. de Comprobante:</b><?php echo $venta->numero_documento;?> <br>
 		<b>Fecha</b> <?php echo $venta->fecha;?> 

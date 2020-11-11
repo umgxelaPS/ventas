@@ -16,16 +16,15 @@
     </head>
     <body>   
 
+            <div class="contenido ">
 
-<div class="content-wrapper contenido formularios">
             <section class="content-header encabezado">
                 <h3 class="text-dark font-weight-bold display-4 titulo">
                 Producto
                 
                 <small class="font-weight-bold">Editar</small>
                 </h3>
-            </section>
-            <section class="content agregar">
+                
                 <div class="box box-solid">
                     <div class="box-body">
                      <hr>
@@ -40,14 +39,14 @@
                         <form action="<?php echo base_url();?>productos/update" method="POST">
                         <input type="hidden" name="idproducto" value="<?php echo $producto->id;?>">
                         <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                         <div class="form-group <?php echo !empty(form_error('codigo'))? 'has-error':'';?>">
                         <label for="codigo">Codigo:</label>
                          <input type="text" class="form-control" id="codigo" name="codigo" value="<?php echo!empty(form_error('codigo')) ? set_value('codigo'): $producto->codigo?>">
                             <?php echo form_error("codigo","<span class='help-block'>","</span>");?>
                             </div> 
                             </div>
-                        <div class="col-md-5">
+                        <div class="col-md-6">
                         <div class="form-group <?php echo !empty(form_error('nombre'))? 'has-error':'';?>">
                         <label for="nombre">Nombre</label>
                          <input type="text" class="form-control" id="nombre" name="nombre"value="<?php echo !empty(form_error('nombre')) ? set_value('nombre'): $producto->nombre?>">
@@ -64,14 +63,14 @@
                             </div>
                             </div>
                             <div class="row">
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                             <div class="form-group <?php echo !empty(form_error('precio'))? 'has-error':'';?>">
                         <label for="Precio">Precio:</label>
                          <input type="text" class="form-control" id="precio" name="precio" value="<?php echo !empty(form_error('precio')) ? set_value('precio'): $producto->precio?>">
                                 <?php echo form_error("precio","<span class='help-block'>","</span>");?>
                             </div>
                             </div>
-                            <div class="col-md-2">
+                            <div class="col-md-3">
                             <div class="form-group <?php echo !empty(form_error('stock'))? 'has-error':'';?>">
                         <label for="stock">Stock:</label>
                          <input type="text" class="form-control" id="stock" name="stock" value="<?php echo !empty(form_error('stock')) ? set_value('stock'):$producto->stock?>">

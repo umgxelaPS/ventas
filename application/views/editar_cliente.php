@@ -15,17 +15,14 @@
     
     </head>
     <body>
-        <div class="content-wrapper contenido formularios">
+        <div class="contenido ">
             <section class="content-header encabezado">
                <h3 class="text-dark font-weight-bold display-4 titulo">
                 Cliente
                 
                 <small class="font-weight-bold">Editar</small>
                 </h3>
-            </section>
-            <section class="content agregar">
-      
-                <div class="box box-solid">
+                    <div class="box box-solid">
                     <div class="box-body">
                 <hr>
               

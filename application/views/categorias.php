@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -17,7 +17,7 @@
     
     </head>
     <body> 
-        <div class="contenido ">
+        <div class="contenido">
             <section class="content-header encabezado ">
                 <div class="row">
                  <div class="col-md-12">
@@ -27,9 +27,6 @@
                 </h3>
                     </div>
                 </div>
-            </section>
-            <section class="content agregar" >
-                
                 <div class="box box-solid">
                     <div class="box-body">
                     <div class="row">
@@ -40,9 +37,8 @@
                     </div>
                     </div>
             </div>
-           <hr>
-              
             </section>
+             <hr>
             <div class="tabla1">
             <div class="row">    
             <table id="example2" class="table table-bordered btn-hover">

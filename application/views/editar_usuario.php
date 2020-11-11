@@ -15,7 +15,7 @@
     
     </head>
     <body>
-        <div class="content-wrapper contenido formularios">
+        <div class="contenido ">
             <section class="content-header  encabezado">
                 <div class="row">
                  <div class="col-md-12">
@@ -26,9 +26,6 @@
                 </h3>
                     </div>
                 </div>
-            </section>
-            
-            <section class="content agregar">
                 <div class="box box-solid">
                     <div class="box-body">
                     <hr>
@@ -44,25 +41,25 @@
                        <form action="<?php echo base_url();?>administrador/usuarios/update" method="POST">
                            <input type="hidden" name="idusuario" value="<?php echo $usuario->id;?>"> 
                          <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                         <div class="form-group">
                         <label for="nombres">Nombres:</label>   
                         <input type="text" id="nombres" name="nombres" class="form-control" value="<?php echo $usuario->nombres;?>"> 
                         </div>
                         </div> 
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                         <label for="apellidos">Apellidos:</label>   
                         <input type="text" id="apellidos" name="apellidos" class="form-control" value="<?php echo $usuario->apellidos;?>"> 
                         </div>
                         </div> 
                         <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                         <div class="form-group">
                         <label for="telefono">Telefono:</label>   
                         <input type="text" id="telefono" name="telefono" class="form-control" value="<?php echo $usuario->telefono;?>"> 
                         </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                         <div class="form-group">
                         <label for="email">Email:</label>   
                         <input type="email" id="email" name="email" class="form-control" value="<?php echo $usuario->email;?>"> 
@@ -70,14 +67,14 @@
                         </div>
                         </div>
                         <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                         <div class="form-group">
                         <label for="usuario">Usuario:</label>   
                         <input type="text" id="username" name="username" class="form-control" value="<?php echo $usuario->username;?>"> 
                         </div> 
                         </div>
         
-                        <div class="col-md-4">
+                        <div class="col-md-6">
                         <div class="form-group">
                         <label for="password">Contraseña:</label>   
                         <input type="password" id="password" name="password" class="form-control" value="<?php echo $usuario->password;?>"> 
@@ -86,7 +83,7 @@
                          </div>
                          <div class="form-group">
                          <div class="row">
-                        <div class="col-md-4">
+                        <div class="col-md-7">
                         <label for="roles">Rol:</label>   
                         <select name="roles" id="roles" class="form-control">
                          <?php foreach($roles as $rol):?>
@@ -113,4 +110,4 @@
             </section>
        
         </div>
-       
+        

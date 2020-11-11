@@ -1,4 +1,4 @@
- <!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -18,17 +18,14 @@
     </head>
     <body> 
 
-        <div class="contenido">
+        <div class="contenidoproductos">
        
-            <section class="content-header encabezado ">
+            <section class="content-header encabezadoproductos ">
                 <h3 class="text-dark font-weight-bold display-4 titulo">
                 Productos
                 
                 <small class="font-weight-bold">Listado</small>
-                </h3>
-            </section>
-            <section class="content agregar">
-                
+                </h3>            
                 <div class="box box-solid">
                     <div class="box-body">
                     <div class="row">
@@ -40,7 +37,7 @@
                      </div>
                        <hr>
                 </section>
-                        <div class="tabla">
+                        <div class="tabla3">
                         <div class="row">
                         <div class="col-md-12">
                         <table id="example1"class="table table-bordered btn-hover">
@@ -74,6 +71,7 @@
                                                     </button>
                                 <a href="<?php echo base_url();?>productos/editar/<?php echo $producto->id;?>" class="btn btn-warning"><i class="icon ion-md-create"></i></a>
                                 <a href="<?php echo base_url();?>productos/eliminar/<?php echo $producto->id;?>" class="btn btn-danger btn-remove"><i class="icon ion-md-trash"></i></a>
+                                <a href="<?php echo base_url();?>ajustes" class="btn btn-secondary"><i class="icon ion-md-settings"></i></a>
                             </div>    
                             </td> 
                             </tr>

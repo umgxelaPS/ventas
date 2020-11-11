@@ -111,6 +111,28 @@ $(document).ready(function () {
          
          
     });
+    $('#existencia').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            {
+            
+            extend: 'excelHtml5',
+            title: "Existencia de porductos",
+            exportOptions:{
+                columns:[0,1,2,3]
+            }
+           },
+      {
+             extend: 'pdfHtml5',
+            title: "Existencia de productos",
+            exportOptions:{
+               columns:[0,1,2,3] 
+            }
+        }
+    ],
+         
+         
+    });
 
 
       $("#comprobantes").on("change",function(){
@@ -133,12 +155,26 @@ $(document).ready(function () {
         sumar();
     })
     
-    $(document).on("click",".btn-check",function(){
-        cliente = $(this).val();
-        infocliente = cliente.split("*");
+     $(document).on("click",".btn-check",function(){
+        cliente= $(this).val();
+        infocliente= cliente.split("*");
         $("#idcliente").val(infocliente[0]);
         $("#cliente").val(infocliente[1]);
         $("#modal-default").modal("hide");
+    });
+     $(document).on("click",".btn-checkProducto",function(){
+        producto = $(this).val();
+        infoproductos = producto.split("*");
+        $("#idcliente").val(infoproductos[0]);
+        $("#producto").val(infoproductos[2]);
+        $("#modal-default").modal("hide");
+    });
+     $(document).on("click",".btn-checkusuario",function(){
+        usuario = $(this).val();
+        infousuario= usuario.split("*");
+        $("#idusuario").val(infousuario[0]);
+        $("#usuario").val(infousuario[1]);
+        $("#modal-defaultuser").modal("hide");
     });
      $("#producto").autocomplete({
         source:function(request,response){
@@ -158,6 +194,7 @@ $(document).ready(function () {
             $("#btn-agregar").val(data);
         },
     });
+ 
      $("#btn-agregar").on("click",function(){
         data= $(this).val();
         if(data !=''){
@@ -207,6 +244,15 @@ $(document).ready(function () {
         $("#modal-default .modal-body").print({
             title:"Comprobante de venta"
         });
+    });
+     
+     $(".btn-view-existencia").on("click", function(){
+        var producto = $(this).val(); 
+       var infoproducto = producto.split("*");
+        html = "<p><strong>Codigo:</strong>"+infoproducto[1]+"</p>"
+        html += "<p><strong>Nombre:</strong>"+infoproducto[2]+"</p>"
+        html += "<p><strong>Existencia:</strong>"+infoproducto[3]+"</p>"
+        $("#modal-default .modal-body").html(html);
     });
 })
     function generarnumero(numero){

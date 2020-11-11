@@ -17,8 +17,9 @@
     
     </head>
     <body> 
-        <div class="contenido ">
-            <section class="content-header encabezado ">
+        <div class="contenidousuarios">
+       
+            <section class="content-header encabezadousuarios">
                 <div class="row">
                  <div class="col">
                 <h3 class="text-dark font-weight-bold display-4 titulo">
@@ -28,8 +29,6 @@
                 </h3>
                     </div>
                 </div>
-            </section>
-            <section class="agregar" >
                 
                 <div class="box box-solid">
                     <div class="box-body">
@@ -44,7 +43,7 @@
            <hr>
               
             </section>
-            <div class="tabla">
+            <div class="tabla6">
 	    <div class="row">
 		<div class="col">
                 
@@ -112,7 +111,4 @@
   
 </div>
     </body>
-</html>
-</div> 
-</body>
 </html>

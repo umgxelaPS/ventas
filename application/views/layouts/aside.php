@@ -30,7 +30,9 @@
       <a href="<?php echo base_url();?>clientes" class="d-block p-3 textomenu"><i class="icon ion-md-person mr-2 lead"></i>Clientes</a>
     <a href="<?php echo base_url();?>productos" class="d-block p-3 textomenu"><i class="icon ion-md-cube mr-2 lead"></i>Productos</a>
     <a href="<?php echo base_url();?>ventas" class="d-block p-3 textomenu"><i class="icon ion-md-cart mr-2 lead"></i>Registrar Ventas</a>
-    <a href="<?php echo base_url();?>reportes/ventas" class="d-block p-3 textomenu"><i class="icon ion-md-calculator mr-2 lead"></i>Reportes</a>
+    <a href="<?php echo base_url();?>reportes/ventas" class="d-block p-3 textomenu"><i class="icon ion-md-calculator mr-2 lead"></i>Reporte Venta</a>
+      <a href="<?php echo base_url();?>reportes/productos" class="d-block p-3 textomenu"><i class="icon ion-md-calculator mr-2 lead"></i>Reporte existencias</a>
+     <a href="<?php echo base_url();?>reportes/movimiento" class="d-block p-3 textomenu"><i class="icon ion-md-calculator mr-2 lead"></i>Reporte Movimiento</a>
     <a href="<?php echo base_url();?>administrador/usuarios" class="d-block p-3 textomenu"><i class="icon ion-md-contacts mr-2 lead"></i>Usuarios</a>
     </div>
     

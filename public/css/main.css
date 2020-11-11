@@ -140,40 +140,103 @@ section{
     height: 20px;
 }
 .contenido{
-    margin-top: 10px;
-    width: 35rem;
-    margin-left: 20%;
-    float: center;
-    background-color: yellow;
-    
+    margin-top: 0%;
+    width: 30%;
+    margin-left: 50%
+    margin-right: 20%;
+    float: right;
+}
+.contenidoventa{
+     margin-top: 0%;
+    width: 100%;
+    padding-left: 70%;
+    margin-left: 70%;
+    float: right;
+   
+}
+.contenidouser{
+    margin-top: 0%;
+    width: 32%;
+    padding-left:40%;
+    margin-left: 40%;
+    float: right;
+}
+
+.contenidoclientes{
+     margin-top: 0%;
+    width: 29%;
+    margin-left: 80%;
+    margin-right: 2%;
+    float: right;
+}
+.contenidoproductos{
+     margin-top: 0%;
+    width: 29%;
+    margin-left: 80%;
+    margin-right: 2%;
+    float: right;
 }
 .contenidoventas{
-     margin-top: 2px;
-    width: 57rem;
-    margin-left: 5%;
-    background-color:aquamarine;
-    height: 1500px;
+     margin-top: 0%;
+    width: 32%;
+    margin-left: 80%;
+    margin-right: 2%;
+    float: right;
+}
+.contenidoreportes{
+    margin-top: 0%;
+    width: 29%;
+    margin-left: 80%;
+    margin-right: 2%;
+    float: right;
+}
+.contenidousuarios{
+    margin-top: 0%;
+    width: 29%;
+    margin-left: 20%;
+    margin-right: 2%;
+    float: right;
 }
 .encabezado{
-     margin-top: 10px;
-    margin-left: 90px;
-    margin-right: 300px;
-    padding-left: 90px;
+     margin-top: 5%;
+    margin-left: 10%;
+    margin-right: 90%;
+    padding-left: 100%;
 }
-.encabezado1{
-    margin-top: 5px;
-    // margin-right: 300px;
-    padding-left: 50px;
+.encabezadocliente{
+     margin-top: 5%;
+    margin-left: 80%;
+    margin-right: 90%;
+    padding-left: 160%;
+}
+.encabezadoproductos{
+      margin-top: 5%;
+    margin-left: 80%;
+    margin-right: 90%;
+    padding-left: 160%;
+}
+.encabezadoventas{
+     margin-top: 5%;
+    margin-left: 80%;
+    margin-right: 90%;
+    padding-left: 160%;
+}
+.encabezadoreportes{
+     margin-top: 2%;
+    margin-left: 80%;
+    margin-right: 90%;
+    padding-left: 160%;
+}
+.encabezadousuarios{
+     margin-top: 5%;
+    margin-left: 80%;
+    margin-right: 90%;
+    padding-left: 160%;
 }
 .titulo{
     font-size: 20px;
 }
-.agregar{
-    margin-top: 0px;
-    padding-left: 90px;
-    margin-left: 90px;
-    float: center;
-}
+
 .tabla{
     margin-top: 60px;
     margin-left: 15px;
@@ -182,21 +245,64 @@ section{
     float: left;
 }
 .tabla1{
-    margin-left: 15px;
-    margin-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    float: left;
+    margin-left: 50%;
+    margin-top: 5%;
+    padding-left: 10%;
+    padding-right: 50%;
+    width: 250%;
+    height: 50%;
+    overflow-y: scroll;
+    float: right;
 }
 .tabla2{
-    margin-left: 15px;
-    margin-top: 60px;
-    padding-left: 15px;
-    padding-right: 15px;
-    float: left;
+     margin-left: 240%;
+    margin-top: 2%;
+    padding-left: 230%;
+    padding-right: 100%;
+    width: 490%;
+    height: 30%;
+    overflow-y: scroll;
+    float: right;
 }
-
-
+.tabla3{
+     margin-left: 200%;
+    margin-top: 2%;
+    padding-left: 230%;
+    padding-right: 100%;
+    width: 495%;
+    height: 30%;
+    overflow-y: scroll;
+    float: right;
+}
+.tabla4{
+     margin-left: 200%;
+    margin-top: 2%;
+    padding-left: 230%;
+    padding-right: 100%;
+    width: 495%;
+    height: 30%;
+    overflow-y: scroll;
+    float: right;
+}
+.tabla5{
+     margin-left: 200%;
+    margin-top: 2%;
+    padding-left: 250%;
+    padding-right: 100%;
+    width: 495%;
+    height: 30%;
+    overflow-y: scroll;
+    float: right;
+}
+.tabla6{
+    margin-left: 90%;
+    margin-top: 2%;
+    padding-left: 280%;
+    padding-right: 100%;
+    width: 410%;
+    height: 30%;
+    float: right;
+}
 #example{
     margin-top: 60px;
     padding-left: 15px;
@@ -207,15 +313,26 @@ section{
  padding-left: 20px;
 }
 .formularios{
-  
-    margin-top: 40px;
-    width: 45rem;
-    margin-left: 20%;
-    float: right;
-    
-    
+margin-top: 10%;
+ width: 140%;
+margin-left: 40%;
+ margin-right: 100%;
+float:right;    
 }
-
+.formulariosuser{
+ margin-top: 10%;
+ width: 170%;
+margin-left: 20%;
+ margin-right: 100%;
+float:right;    
+}
+.formulariosventa{
+margin-top: 10%;
+ width: 153%;
+margin-left: 90%;
+ margin-right: 70%;
+float:right; 
+}
 .bienvenida{
     margin-left: 50px;
     color: red;
